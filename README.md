@@ -29,7 +29,7 @@
 | 吞吐 | +2~4× | `throughput_req_per_sec`、`throughput_tok_per_sec` |
 | 延遲 | -30~50% | `mean TTFT`、`mean E2E latency` |
 
-做法:把同一段 ~800 token 的長前綴(system prompt + 5-shot 範例)接上 100 個不同的後綴問題,**只變動 `enable_prefix_caching=True/False` 兩種設定**,其它都固定,然後比較。
+做法:把同一段 ~800 token 的長前綴(system prompt + 5-shot 範例)接上 100 個不同的後綴問題,**只變動 `enable_prefix_caching=True/False` 兩種設定**,其它都固定,然後比較
 ## 對應作業
 - 作業：3468 演算法 HW11 (Ch11) Problem 8(a)
 - 投影片：CLRS 4e Ch11 v4 PPT 第 82 頁
