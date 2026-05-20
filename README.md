@@ -1,3 +1,21 @@
+## 學生資訊
+- 姓名：[游晉瑋]
+- 學號：[B3230932]
+- 課程：3468 演算法 1142
+## 實驗環境
+- 平台：Google Colab T4 / WSL2 / 純 Linux（擇一）
+- vLLM 版本：[填 vllm.__version__]
+- 模型：Qwen2.5-0.5B-Instruct（或你實際用的）
+- prompts 數：100
+- max_tokens：64
+## 結果摘要
+========== 比較摘要 ==========
+  吞吐 (req/s) 加速:  2.91 倍
+  吞吐 (tok/s) 加速:  2.91 倍
+  總耗時下降:          65.6%  (4.83s → 1.66s)
+  (TTFT 缺失:vLLM V1 engine 在 offline 模式不回傳 per-request metrics)
+
+對照投影片宣稱「吞吐 +2~4x、延遲 -30~50%」,確認觀測到類似量級即達成實驗目標。
 # vLLM Prefix Caching 體驗實驗
 
 > 對應投影片:**Chapter 11 / p.76 — A.2 vLLM KV Cache Prefix Hashing**
